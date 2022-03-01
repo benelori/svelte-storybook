@@ -1,0 +1,9 @@
+/.svelte
+/build
+/functions
+.DS_Store
+node_modules
+/.svelte-kit
+/package
+storybook-static
+.netlify

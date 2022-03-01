@@ -1,0 +1,13 @@
+overwrite: true
+schema: ""
+generates:
+  src/generated/graphql.d.ts:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+  src/generated/queries.ts:
+    documents: 'src/documents/queries/*.graphql'
+    plugins:
+      - "typescript-document-nodes"
+    config:
+      gqlImport: graphql-request#gql
